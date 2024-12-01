@@ -29,7 +29,7 @@ dd {
     background: rgb(19, 18, 18);
     font-family: 'Roboto';
     scroll-behavior: smooth;
-
+    
     &__title {
       font-size: 72px;
       color: white;
@@ -37,6 +37,7 @@ dd {
       margin: 0 0 72px;
       box-shadow: -2px 2px 33px wheat;
       border-radius: 32px;
+      text-transform: uppercase;
     }
 
     &__subtitle {
@@ -141,4 +142,36 @@ dd {
 .pulse-effect {
   display: inline-block;
   animation: pulse 1s infinite;
+}
+
+@media(max-width: 567px) {
+  .portfolio {
+    &__body {
+      padding: 72px 15px 48px;
+    }
+
+    &__title {
+      padding: 15px;
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      padding: 10px;
+      max-width: 100%;
+      font-size: 28px;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+
+      &-item {
+        max-width: 100%;
+        
+        img {
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
