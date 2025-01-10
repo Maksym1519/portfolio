@@ -60,6 +60,7 @@ dd {
       flex-direction: column;
       row-gap: 24px;
       width: 100%;
+      min-height: 600px;
       background: linear-gradient(to bottom right, #87CEFA, #ADD8E6);
       border-radius: 16px;
       padding: 24px 16px;
@@ -89,7 +90,9 @@ dd {
       .portfolio__content-item svg:hover {
         transform: scale(1.1); }
       .portfolio__content-item img {
-        height: 80%; }
+        height: 70%; 
+        object-fit: cover;
+      }
     .portfolio__content-item:hover {
       box-shadow: 0 8px 15px #e7e78d;
       transform: translateY(-15px); }
